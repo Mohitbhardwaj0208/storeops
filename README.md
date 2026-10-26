@@ -6,7 +6,7 @@ End-to-end DevOps platform for a retail store-fleet health API — built with op
 
 ## Phases
 - [x] 1. App + Docker + docker-compose
-- [ ] 2. Jenkins CI pipeline (test → build → scan → push)
+- [x] 2. Jenkins CI pipeline (test → build → scan → push)
 - [ ] 3. Helm chart + manual deploy to k3s (+ OpenTofu for cluster resources)
 - [ ] 4. ArgoCD GitOps
 - [ ] 5. Prometheus / Grafana / Loki observability
