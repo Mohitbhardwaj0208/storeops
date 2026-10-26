@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                  docker run --rm -v "$PWD":/src -w /src python:3.12-slim \
+                  docker run --rm -v jenkins_jenkins_home:/var/jenkins_home -w "$PWD" python:3.12-slim \
                     sh -c "pip install -q -r app/requirements.txt && pytest app/tests -q"
                 '''
             }
